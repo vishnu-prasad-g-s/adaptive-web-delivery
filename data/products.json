@@ -1,0 +1,82 @@
+[
+  {
+    "id": "p1",
+    "name": "Aura Noise-Canceling Headphones",
+    "price": 2999,
+    "description": "Premium over-ear wireless headphones with active noise cancellation, 30-hour battery life, and spatial audio support.",
+    "category": "Audio",
+    "rating": 4.8,
+    "imageSmall": "/images/small/p1.jpg",
+    "imageLarge": "/images/large/p1.jpg"
+  },
+  {
+    "id": "p2",
+    "name": "Pulse Smartwatch Pro",
+    "price": 4999,
+    "description": "Fitness tracking smartwatch with AMOLED display, continuous heart-rate monitoring, SPO2 sensor, and GPS.",
+    "category": "Wearables",
+    "rating": 4.6,
+    "imageSmall": "/images/small/p2.jpg",
+    "imageLarge": "/images/large/p2.jpg"
+  },
+  {
+    "id": "p3",
+    "name": "Sonic Mini Bluetooth Speaker",
+    "price": 1499,
+    "description": "Ultra-portable waterproof IPX7 speaker with deep bass, 12-hour playtime, and dual stereo pairing capability.",
+    "category": "Audio",
+    "rating": 4.5,
+    "imageSmall": "/images/small/p3.jpg",
+    "imageLarge": "/images/large/p3.jpg"
+  },
+  {
+    "id": "p4",
+    "name": "Lumina RGB Mechanical Keyboard",
+    "price": 3499,
+    "description": "Hot-swappable mechanical keyboard featuring per-key RGB lighting, silent linear switches, and aluminum chassis.",
+    "category": "Peripherals",
+    "rating": 4.9,
+    "imageSmall": "/images/small/p4.jpg",
+    "imageLarge": "/images/large/p4.jpg"
+  },
+  {
+    "id": "p5",
+    "name": "ErgoGlide Precision Wireless Mouse",
+    "price": 1999,
+    "description": "Ergonomic multi-device wireless mouse with hyperscroll wheel, silent click switches, and 4000 DPI sensor.",
+    "category": "Peripherals",
+    "rating": 4.7,
+    "imageSmall": "/images/small/p5.jpg",
+    "imageLarge": "/images/large/p5.jpg"
+  },
+  {
+    "id": "p6",
+    "name": "Optix 4K UltraHD Web Camera",
+    "price": 5499,
+    "description": "Professional 4K streaming webcam with auto-framing, dual noise-canceling microphones, and privacy shutter.",
+    "category": "Cameras",
+    "rating": 4.4,
+    "imageSmall": "/images/small/p6.jpg",
+    "imageLarge": "/images/large/p6.jpg"
+  },
+  {
+    "id": "p7",
+    "name": "Nova Pad 11-Inch Tablet",
+    "price": 12999,
+    "description": "Slim tablet featuring 120Hz display, quad speakers, stylus support, and powerful 8-core processor.",
+    "category": "Tablets",
+    "rating": 4.7,
+    "imageSmall": "/images/small/p7.jpg",
+    "imageLarge": "/images/large/p7.jpg"
+  },
+  {
+    "id": "p8",
+    "name": "ChargePod 65W GaN Fast Charger",
+    "price": 1299,
+    "description": "Compact 3-port GaN wall charger capable of fast charging laptops, tablets, and smartphones simultaneously.",
+    "category": "Accessories",
+    "rating": 4.8,
+    "imageSmall": "/images/small/p8.jpg",
+    "imageLarge": "/images/large/p8.jpg"
+  }
+]
