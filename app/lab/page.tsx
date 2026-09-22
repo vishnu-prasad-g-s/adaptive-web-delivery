@@ -60,17 +60,22 @@ export default function PerformanceLabPage() {
 
       {/* Live Web Vitals Metrics Section */}
       <section className="mb-10">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-white flex items-center gap-2">
-            <span>⚡ Live Session Web-Vitals Telemetry</span>
-            <span className="text-xs font-normal text-slate-400">(`web-vitals` npm logger)</span>
-          </h2>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+          <div>
+            <h2 className="text-lg font-bold text-white flex items-center gap-2">
+              <span>⚡ Live Client Session Telemetry</span>
+              <span className="text-xs font-normal text-slate-400">(`web-vitals` npm logger)</span>
+            </h2>
+            <p className="text-xs text-slate-400 mt-0.5">
+              Reflects your active browser session. On local dev server (<code className="text-indigo-300">localhost</code>), unthrottled response times are sub-200ms.
+            </p>
+          </div>
           <button
             onClick={() => {
               sessionStorage.removeItem("adaptive_vitals_log");
               setLiveVitals([]);
             }}
-            className="text-xs text-slate-400 hover:text-slate-200 underline"
+            className="text-xs text-slate-400 hover:text-slate-200 underline shrink-0"
           >
             Clear Session Logs
           </button>
@@ -123,15 +128,20 @@ export default function PerformanceLabPage() {
         <div className="p-6 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-2xl">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 pb-4 border-b border-slate-800">
             <div>
-              <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                <span>🏆 Empirical Benchmark Matrix: Baseline vs Adaptive</span>
-              </h2>
-              <p className="text-xs text-slate-400">
-                Lighthouse audit results under <span className="text-amber-400 font-semibold">Slow 3G Network Throttling + 4x CPU Slowdown</span>
+              <div className="flex items-center gap-2">
+                <h2 className="text-lg font-bold text-white flex items-center gap-2">
+                  <span>🏆 Benchmark Matrix: Baseline vs Adaptive</span>
+                </h2>
+                <span className="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-700/60">
+                  Slow 3G Network Throttled Audit
+                </span>
+              </div>
+              <p className="text-xs text-slate-400 mt-1">
+                Measured under <strong className="text-slate-200">Slow 3G Network Throttling (400kbps) + 4x CPU Slowdown</strong>. Demonstrates real-world performance impact under constrained mobile connectivity.
               </p>
             </div>
             <div className="text-xs font-mono text-cyan-400 bg-cyan-950/60 border border-cyan-800/60 px-3 py-1.5 rounded-lg shrink-0">
-              Tested September 2026
+              Audit Profile: Slow 3G / 4x CPU
             </div>
           </div>
 
