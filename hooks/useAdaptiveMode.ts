@@ -20,7 +20,16 @@ const DEFAULT_DECISION: AdaptationDecision = {
 
 export function useAdaptiveMode() {
   const [decision, setDecision] = useState<AdaptationDecision>(DEFAULT_DECISION);
-  const [overrideMode, setOverrideMode] = useState<AdaptiveMode | null>(null);
+  const [overrideMode, setOverrideMode] = useState<AdaptiveMode | null>(() => {
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      const modeParam = urlParams.get("mode")?.toUpperCase();
+      if (modeParam === "FULL" || modeParam === "CONSTRAINED") {
+        return modeParam as AdaptiveMode;
+      }
+    }
+    return null;
+  });
 
   useEffect(() => {
     let cancelled = false;
